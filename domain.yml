@@ -1,0 +1,68 @@
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- says location
+- greet
+- is hungry
+- wana have cuisine
+- mood_great
+- goodbye
+- asking restaurants
+- affirm
+- deny
+- mood_unhappy
+- bot_challenge
+- nlu_fallback
+entities:
+- cuisine
+- location
+slots:
+  location:
+    type: text
+    influence_conversation: true
+  cuisine:
+    type: text
+    influence_conversation: true
+responses:
+  utter_greet:
+  - buttons:
+    - payload: I am hungry.
+      title: Hungry
+    - payload: I am great.
+      title: Full
+    text: Hey! How are you?
+  utter_mood_unhappy:
+  - image: https://i.imgur.com/nGF1K8f.jpg
+    text: 'Here is something to cheer you up:'
+  utter_mood_great:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Bye
+  utter_bot_challenge:
+  - text: I am a bot, powered by Rasa and Zomato.
+  utter_says location:
+  - text: What kind of cuisine would you like to eat!
+  utter_wana have cuisine:
+  - text: ok Please Wait For Some time while we list some Restaurants for you!
+  utter_asking restaurants:
+  - text: I cant locate you!Please say your location once.
+  utter_is hungry:
+  - text: I can Find a Nice Restaurant for You!Please Tell me Your Current Location.
+  utter_deny:
+  - text: What Would You Like to Have Then!
+  utter_affirm:
+  - text: Sorry I din't get You.
+actions:
+- action_find
+- utter_I  am a Bot!Cannot Understand What You are saying.
+- utter_affirm
+- utter_asking restaurants
+- utter_bot_challenge
+- utter_deny
+- utter_goodbye
+- utter_greet
+- utter_is hungry
+- utter_mood_great
+- utter_says location
+- utter_wana have cuisine

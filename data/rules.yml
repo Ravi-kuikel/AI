@@ -1,0 +1,31 @@
+version: "2.0"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_bot_challenge
+
+- rule: Fallback
+  steps:
+    - intent: nlu_fallback
+    - action: utter_I  am a Bot!Cannot Understand What You are saying.
+- rule: wana have
+  steps:
+    - intent: wana have cuisine
+    - action: utter_wana have cuisine
+    - action: action_find
+- rule: says location
+  steps:
+    - intent: says location
+    - action: utter_says location
+- rule: uttergreet
+  steps:
+    - intent: greet
+    - action: utter_greet

@@ -1,0 +1,165 @@
+version: "2.0"
+
+stories:
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: is hungry
+  - action: utter_is hungry
+- story: story1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_mood_great
+
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: is hungry
+  - action: utter_is hungry
+  - intent: says location
+    entities:
+    - location: delhi
+  - slot_was_set:
+    - location: delhi
+  - action: utter_says location
+  - intent: wana have cuisine
+    entities:
+    - cuisine: chinese
+  - slot_was_set:
+    - cuisine: chinese
+  - action: utter_wana have cuisine
+  - action: action_find
+  - intent: is hungry
+  - action: utter_is hungry
+  - intent: says location
+    entities:
+    - location: bengaluru
+  - slot_was_set:
+    - location: bengaluru
+  - action: utter_says location
+
+- story: interactive_story_2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: is hungry
+  - action: utter_is hungry
+  - intent: says location
+    entities:
+    - location: delhi
+  - slot_was_set:
+    - location: delhi
+  - action: utter_says location
+  - intent: wana have cuisine
+    entities:
+    - cuisine: thai
+  - slot_was_set:
+    - cuisine: thai
+  - action: utter_wana have cuisine
+  - action: action_find
+  - intent: is hungry
+  - action: utter_is hungry
+  - intent: says location
+    entities:
+    - location: kolkatta
+  - slot_was_set:
+    - location: kolkatta
+  - action: utter_says location
+  - intent: wana have cuisine
+    entities:
+    - cuisine: momo
+  - slot_was_set:
+    - cuisine: momo
+  - action: utter_wana have cuisine
+  - action: action_find
+  - intent: wana have cuisine
+    entities:
+    - cuisine: chinese
+  - slot_was_set:
+    - cuisine: chinese
+  - action: utter_wana have cuisine
+  - action: action_find
+  - intent: wana have cuisine
+  - action: utter_wana have cuisine
+  - action: action_find
+  - intent: wana have cuisine
+    entities:
+    - cuisine: chowmein
+  - slot_was_set:
+    - cuisine: chowmein
+  - action: utter_wana have cuisine
+  - action: action_find
+  - intent: wana have cuisine
+  - action: utter_wana have cuisine
+  - action: action_find
+  - intent: wana have cuisine
+    entities:
+    - cuisine: pizza
+  - slot_was_set:
+    - cuisine: pizza
+  - action: utter_wana have cuisine
+  - action: action_find
+  - intent: mood_great
+  - action: utter_mood_great
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_mood_great
+  - intent: is hungry
+  - action: utter_is hungry
+  - intent: says location
+    entities:
+    - location: delhi
+  - slot_was_set:
+    - location: delhi
+  - action: utter_says location
+  - intent: wana have cuisine
+    entities:
+    - cuisine: thai
+  - slot_was_set:
+    - cuisine: thai
+  - action: utter_wana have cuisine
+  - action: action_find
+
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: is hungry
+  - action: utter_is hungry
+  - intent: says location
+    entities:
+    - location: delhi
+  - slot_was_set:
+    - location: delhi
+  - action: utter_says location
+  - intent: wana have cuisine
+    entities:
+    - cuisine: indian
+  - slot_was_set:
+    - cuisine: indian
+  - action: utter_wana have cuisine
+  - action: action_find
+  - intent: wana have cuisine
+    entities:
+    - cuisine: momos
+  - slot_was_set:
+    - cuisine: momos
+  - action: utter_wana have cuisine
+  - action: action_find
+  - intent: wana have cuisine
+    entities:
+    - cuisine: momo
+  - slot_was_set:
+    - cuisine: momo
+  - action: utter_wana have cuisine
+  - action: action_find

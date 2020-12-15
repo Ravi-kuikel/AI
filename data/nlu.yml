@@ -1,0 +1,365 @@
+version: "2.0"
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - yo
+    - whats up bro
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+    - i am full
+    - I am great.
+    - thank you
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+- intent: wana have cuisine
+  examples: |
+    - i would like to have some [indian](cuisine)
+    - i would like to have some [continental](cuisine)
+    - i would like to have some [american](cuisine)
+    - i would like to have some [chinese](cuisine)
+    - i would like to have some [italian](cuisine)
+    - i would like to have some [british](cuisine)
+    - i would like to have some [french](cuisine)
+    - i would like to have some [greek](cuisine)
+    - i would like to have some [caribbean](cuisine)
+    - i would like to have some [japanese](cuisine)
+    - i would like to have some [Mediterranean](cuisine)
+    - i would like to have some [mexican](cuisine)
+    - i would like to have some [moroccan](cuisine)
+    - i would like to have some [spanish](cuisine)
+    - i would like to have some [thai](cuisine)
+    - i would like to have some [turkish](cuisine)
+    - i would like to have some [vietnamese](cuisine)
+    - i would like to have some [sindhi](cuisine)
+    - i would like to have some [BBQ](cuisine)
+    - i would like to have some [Beverages](cuisine)
+    - i would like to have some [North Indian](cuisine)
+    - i would like to have some [Asian](cuisine)
+    - i would like to have some [Finger Food](cuisine)
+    - i would like to have some [South Indian](cuisine)
+    - i would like to have some [Andhra](cuisine)
+    - i would like to have some [European](cuisine)
+    - i would like to have some [Desserts](cuisine)
+    - i would like to have some [Salad](cuisine)
+    - i would like to have some [Mughlai](cuisine)
+    - i would like to have some [Biryani](cuisine)
+    - i would like to have some [Fast Food](cuisine)
+    - i would like to have some [Bengali](cuisine)
+    - i would like to have some [Chettinad](cuisine)
+    - i would like to have some [Goan](cuisine)
+    - i would like to have some [Kashmiri](cuisine)
+    - i would like to have some [Gujarati](cuisine)
+    - i would like to have some [Juices](cuisine)
+    - i would like to have some [Momos](cuisine)
+    - i would like to have some [North Eastern](cuisine)
+    - i would like to have some [Cafe](cuisine)
+    - i would like to have some [Bar Food](cuisine)
+    - i would like to have some [Tibetan](cuisine)
+    - i would like to have some [Rolls](cuisine)
+    - i would like to have some [Kebab](cuisine)
+    - i would like to have some [Middle Eastern](cuisine)
+    - i would like to have some [Seafood](cuisine)
+    - i would like to have some [Awadhi](cuisine)
+    - i would like to have some [Healthy Food](cuisine)
+    - i would like to have some [Modern Indian](cuisine)
+    - i would like to have some [Pizza](cuisine)
+    - i would like to have some [Burger](cuisine)
+    - i would like to have some [Grill](cuisine)
+    - i would like to have some [Steak](cuisine)
+    - i would like to have some [Hyderabadi](cuisine)
+    - i would like to have some [shawarma](cuisine)
+    - i would like to have some [Bakery](cuisine)
+    - i would like to have some [Arabian](cuisine)
+    - i would like to have some [Maharashtrian](cuisine)
+    - i would like to have some [Tex-Mex ](cuisine)
+    - i would like to have some [Lucknowi](cuisine)
+    - i would like to have some [Lebanese](cuisine)
+    - i would like to have some [Kerala](cuisine)
+    - i would like to have some [Drinks](cuisine)
+    - i would like to have some [Mithai](cuisine)
+    - i would like to have some [Street Food](cuisine)
+    - i would like to have some [Sushi](cuisine)
+    - i would like to have some [German](cuisine)
+    - i would like to have some [Ice Cream](cuisine)
+    - i would like to have some [Sandwich](cuisine)
+    - i would like to have some [Nepalese](cuisine)
+    - i would like to have some [Assamese](cuisine)
+    - i would like to have some [Peruvian](cuisine)
+    - i would like to have some [Rajasthani](cuisine)
+    - i would like to have some [Roast Chicken](cuisine)
+    - i would like to have some [Soul Food](cuisine)
+    - i would like to have some [Raw Meats](cuisine)
+    - i would like to have some [Frozen Yogurt](cuisine)
+    - i would like to have some [Israeli](cuisine)
+    - i would like to have some [Tamil](cuisine)
+    - i would like to have some [Wraps](cuisine)
+    - i would like to have some [russian](cuisine)
+    - i would like to have some [Pav bhaaji](cuisine)
+    - i would like to have some [pav bhaji](cuisine)
+    - i would like to have some [Charcoal Chicken](cuisine)
+    - i would like to have some [Brazilian](cuisine)
+    - i would like to have some [Tea](cuisine)
+    - i would like to have some [Iranian](cuisine)
+    - i would like to have some [konkan](cuisine)
+    - i would like to have some [Malaysian](cuisine)
+    - i would like to have some [Mangalorean](cuisine)
+    - i would like to have some [Mongolian](cuisine)
+    - i would like to have some [odia](cuisine)
+    - i would like to have some [afghan](cuisine)
+    - i would like to have some [afghani](cuisine)
+    - i would like to have some [malayali](cuisine)
+    - i would like to have some [punjabi](cuisine)
+    - i would like to have some [haryanvi](cuisine)
+    - i would like to have some [malvan](cuisine)
+    - i would like to have some [malvani](cuisine)
+    - i would like to have some [coffee and tea](cuisine)
+    - [indian](cuisine)
+    - [continental](cuisine)
+    - [american](cuisine)
+    - [chinese](cuisine)
+    - [italian](cuisine)
+    - [british](cuisine)
+    - [french](cuisine)
+    - [greek](cuisine)
+    - [caribbean](cuisine)
+    - [japanese](cuisine)
+    - [Mediterranean](cuisine)
+    - [mexican](cuisine)
+    - [moroccan](cuisine)
+    - [spanish](cuisine)
+    - [thai](cuisine)
+    - [turkish](cuisine)
+    - [vietnamese](cuisine)
+    - [sindhi](cuisine)
+    - [BBQ](cuisine)
+    - [Beverages](cuisine)
+    - [North Indian](cuisine)
+    - [Asian](cuisine)
+    - [Finger Food](cuisine)
+    - [South Indian](cuisine)
+    - [Andhra](cuisine)
+    - [European](cuisine)
+    - [Desserts](cuisine)
+    - [Salad](cuisine)
+    - [Mughlai](cuisine)
+    - [Biryani](cuisine)
+    - [Fast Food](cuisine)
+    - [Bengali](cuisine)
+    - [Chettinad](cuisine)
+    - [Goan](cuisine)
+    - [Kashmiri](cuisine)
+    - [Gujarati](cuisine)
+    - [Juices](cuisine)
+    - [Momos](cuisine)
+    - [North Eastern](cuisine)
+    - [Cafe](cuisine)
+    - [Bar Food](cuisine)
+    - [Tibetan](cuisine)
+    - [Rolls](cuisine)
+    - [Kebab](cuisine)
+    - [Middle Eastern](cuisine)
+    - [Seafood](cuisine)
+    - [Awadhi](cuisine)
+    - [Healthy Food](cuisine)
+    - [Modern Indian](cuisine)
+    - [Pizza](cuisine)
+    - [Burger](cuisine)
+    - [Grill](cuisine)
+    - [Steak](cuisine)
+    - [Hyderabadi](cuisine)
+    - [shawarma](cuisine)
+    - [Bakery](cuisine)
+    - [Arabian](cuisine)
+    - [Maharashtrian](cuisine)
+    - [Tex-Mex ](cuisine)
+    - [Lucknowi](cuisine)
+    - [Lebanese](cuisine)
+    - [Kerala](cuisine)
+    - [Drinks](cuisine)
+    - [Mithai](cuisine)
+    - [Street Food](cuisine)
+    - [Sushi](cuisine)
+    - [German](cuisine)
+    - [Ice Cream](cuisine)
+    - [Sandwich](cuisine)
+    - [Nepalese](cuisine)
+    - [Assamese](cuisine)
+    - [Peruvian](cuisine)
+    - [Rajasthani](cuisine)
+    - [Roast Chicken](cuisine)
+    - [Soul Food](cuisine)
+    - [Raw Meats](cuisine)
+    - [Frozen Yogurt](cuisine)
+    - [Israeli](cuisine)
+    - [Tamil](cuisine)
+    - [Wraps](cuisine)
+    - [russian](cuisine)
+    - [Pav bhaaji](cuisine)
+    - [pav bhaji](cuisine)
+    - [Charcoal Chicken](cuisine)
+    - [Brazilian](cuisine)
+    - [Tea](cuisine)
+    - [Iranian](cuisine)
+    - [konkan](cuisine)
+    - [Malaysian](cuisine)
+    - [Mangalorean](cuisine)
+    - [Mongolian](cuisine)
+    - [odia](cuisine)
+    - [afghan](cuisine)
+    - [afghani](cuisine)
+    - [malayali](cuisine)
+    - [punjabi](cuisine)
+    - [haryanvi](cuisine)
+    - [malvan](cuisine)
+    - [malvani](cuisine)
+    - [coffee and tea](cuisine)
+    - i wana to eat [italian](cuisine)
+    - i wana have some thing
+    - [momo](cuisine)
+    - i wana have some [chinese](cuisine)
+    - i wana have some thing different now
+    - [chowmein](cuisine)
+    - i wana have chowmein
+    - i wana have [pizza](cuisine)
+    - [indian](cuisine)
+    - i wana have some [momos](cuisine)
+    - i wana have [momo](cuisine)
+- intent: says location
+  examples: |
+    - can you change the location to [delhi](location)
+    - can you change the location to [gangtok](location)
+    - can you change the location to [mumbai](location)
+    - can you change the location to [hyderbad](location)
+    - can you change the location to [kolkatta](location)
+    - can you change the location to [banglore](location)
+    - can you change the location to [siliguri](location)
+    - can you change the location to [chennai](location)
+    - can you change the location to [jaipur](location)
+    - can you change the location to [bengaluru](location)
+    - [delhi](location)
+    - [gangtok](location)
+    - [mumbai](location)
+    - [hyderbad](location)
+    - [kolkatta](location)
+    - [banglore](location)
+    - [siliguri](location)
+    - [chennai](location)
+    - [jaipur](location)
+    - [bengaluru](location)
+    - i am from [delhi](location)
+    - i am from [gangtok](location)
+    - i am from [mumbai](location)
+    - i am from [hyderbad](location)
+    - i am from [kolkatta](location)
+    - i am from [banglore](location)
+    - i am from [siliguri](location)
+    - i am from [chennai](location)
+    - i am from [jaipur](location)
+    - i am from [bengaluru](location)
+    - find restaurants in [delhi](location)
+    - find restaurants in [gangtok](location)
+    - find restaurants in [mumbai](location)
+    - find restaurants in [hyderbad](location)
+    - find restaurants in [kolkatta](location)
+    - find restaurants in [banglore](location)
+    - find restaurants in [siliguri](location)
+    - find restaurants in [chennai](location)
+    - find restaurants in [jaipur](location)
+    - find restaurants in [bengaluru](location)
+    - restaurants in [delhi](location)
+    - i am currently in [delhi](location)
+    - find me restaurants in [delhi](location)
+    - change cuisine
+    - from [gangtok](location)
+    - [delhi](location)
+- intent: is hungry
+  examples: |
+    - i am hungry
+    - i want to eat
+    - i want
+    - eat
+    - i wana eat
+    - I am hungry.
+- intent: asking restaurants
+  examples: |
+    - restaurants near me
+    - find me restaurants
+    - tell me restaurants
+    - hey what can you [offer](cuisine).
